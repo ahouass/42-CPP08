@@ -43,7 +43,7 @@ int main() {
         std::srand(std::time(0));
         
         for (int i = 0; i < 10000; ++i) {
-            sp.addNumber(std::rand() % 1000000);
+            sp.addNumber(std::rand() % 100000);
         }
         
         std::cout << "Shortest span (10k numbers): " << sp.shortestSpan() << std::endl;

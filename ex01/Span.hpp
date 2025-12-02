@@ -16,13 +16,12 @@ private:
 public:
     Span();
     Span(unsigned int N);
-    Span(const Span& other);
+    Span(const Span& copy);
     Span& operator=(const Span& other);
     ~Span();
     
     void addNumber(int number);
     
-    // Template function - definition in header
     template <typename Iterator>
     void addNumbers(Iterator begin, Iterator end) {
         size_t distance = std::distance(begin, end);
